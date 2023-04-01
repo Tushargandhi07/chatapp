@@ -2,8 +2,8 @@ const express=require("express")
 const app=express()
 const socketio=require("socket.io")
 const http=require("http")
-const { userJoin, getRoomUsers, getCurrentUser, userLeave } = require("./utils/users")
-const formateMessage = require("./utils/messages")
+const { userJoin, getRoomUsers, getCurrentUser, userLeave } = require("./users.js")
+const formateMessage = require("./messages.js")
 
 
 const httpserver=http.createServer(app)
